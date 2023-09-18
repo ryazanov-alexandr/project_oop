@@ -1,0 +1,10 @@
+<form action="{{ baseUrl }}article/delete" method="post" onsubmit="return confirm('Really Delete?');">
+    <div>
+        <h2>{{ article.title }}</h2>
+        <div>{{ article.content }}</div>
+        <br>
+        <a href="{{ baseUrl }}article/edit/{{ article.id_article }}">Edit</a>
+        <input type="text" name="id_article" value="{{ article.id_article }}" hidden="hidden">
+        <button type="submit">Удалить</button>
+    </div>
+</form>

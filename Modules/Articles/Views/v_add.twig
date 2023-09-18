@@ -1,0 +1,18 @@
+{% block title %}
+<h1>Add title</h1>
+{% endblock %}
+
+<form method="post">
+    <div>
+        <div>Title</div>
+        <div><input name="title" value="{{ fields.title }}"></div>
+        <div>{{ errors.title }}</div>
+    </div>
+    <div>
+        <div>Content</div>
+        <textarea name="content">{{ fields.content }}</textarea>
+        <div>{{ errors.content }}</div>
+    </div>
+
+    <button type="submit">Send</button>
+</form>

@@ -1,0 +1,7 @@
+{
+    "name": "ryaza/project.oop",
+    "require": {
+        "rakit/validation": "^1.4",
+        "twig/twig": "^3.0"
+    }
+}
